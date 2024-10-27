@@ -1,0 +1,342 @@
+<section class="section">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-2 report-col d-flex align-items-stretch col-12  ">
+                <div class="report-cont-parent">
+                    <div class="report-cont  ">
+                        <div class="report-card ">
+                            <div class="image">
+                                <img src="../../assets/Bitmap.png" alt="">
+                            </div>
+                        </div>
+                        <div class="report-header">
+                            <p>Report for</p>
+                            <h1>Best Sales</h1>
+                        </div>
+                    </div>
+                    <!-- <div class="report-body"> -->
+                    <ul class="list">
+                        <li class="list-item">Daily</li>
+                        <li class="list-item">Weekly</li>
+                        <li class="list-item">Monthly</li>
+                    </ul>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+            <div class="col-10 d-flex align-items-stretch">
+                <div class="row row-cols-lg-5   row-cols-1 card-row">
+                    <div class="col d-flex align-items-stretch" *ngFor="let product of products">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>{{product.category}}</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body ">
+                                        <div class="card-price">
+                                           {{product.price }}$
+                                        </div>
+                                        <div class="card-details">
+                                            <p class="w-75 info">{{product.title}} </p>
+                                            <div class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">{{product.rating.count}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card-cont ">
+                            <div class="cardd   ">
+                                <div class="card-content">
+                                    <div class="card-header ">
+                                        <div class="card-title">
+                                            <h5>men's clothing</h5>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+
+
+                                    <div class="card-body  ">
+                                        <div class="card-price">
+                                            234.34$
+                                        </div>
+                                        <div class="card-details ">
+                                            <p class="w-75 info">Lorem ipsum dolor sit amet consectetur </p>
+                                            <div
+                                                class="avilable w-25 ">
+                                                <p>instore</p>
+                                                <div class="num">124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

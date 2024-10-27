@@ -26,13 +26,14 @@
             </div>
             <div class="col-10 d-flex align-items-stretch">
                 <div class="row row-cols-lg-5   row-cols-1 card-row">
-                    <div class="col d-flex align-items-stretch" *ngFor="let product of products">
-                        <div class="card-cont ">
+                    <div class="col d-flex align-items-stretch" *ngFor="let product of products; let i = index">
+                        <div class="card-cont " [appBgColor]="i +1">
                             <div class="cardd   ">
                                 <div class="card-content">
                                     <div class="card-header ">
                                         <div class="card-title">
                                             <h5>{{product.category}}</h5>
+
                                         </div>
                                         <i class="fa-solid fa-ellipsis"></i>
                                     </div>
@@ -40,7 +41,7 @@
 
                                     <div class="card-body ">
                                         <div class="card-price">
-                                           {{product.price }}$
+                                            {{product.price }}$
                                         </div>
                                         <div class="card-details">
                                             <p class="w-75 info">{{product.title}} </p>
